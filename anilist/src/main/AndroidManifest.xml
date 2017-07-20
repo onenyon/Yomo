@@ -7,6 +7,14 @@
         android:label="@string/app_name"
         android:supportsRtl="true">
         <activity android:name=".auth.AuthActivity" />
+        <service android:name=".auth.authenticate.YomoAuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
     </application>
 
 </manifest>

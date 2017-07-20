@@ -12,6 +12,13 @@ android {
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
+
+        def schema = 'axter.yomo.auth'
+        resValue "string", "account_type", schema
+
+        buildConfigField 'String', 'CLIENT_ID', '"darkkuro-frsiy"'
+        buildConfigField 'String', 'CLIENT_SECRET', '"'+project.yomoSecret.toString()+'"'
+        buildConfigField 'String', 'REDIRECT_URI', '"' + schema + '://oauth"'
     }
     buildTypes {
         release {
