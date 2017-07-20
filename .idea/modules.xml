@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Yomo.iml" filepath="$PROJECT_DIR$/Yomo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/anilist/anilist.iml" filepath="$PROJECT_DIR$/anilist/anilist.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
